@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "extension-builder"
+version = "0.0.1"
+description = ""
+authors = ["Firepup Sixfifty <firepyp650@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
