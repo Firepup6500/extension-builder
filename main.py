@@ -110,6 +110,9 @@ with open("github-material-icons-chrome-extension.xml", "w") as f:
         ]
     )
 
+with open("localVersionCache.py", "w") as f:
+    f.write(f'oldVer = "{version}"')
+
 endTime = dt.now(tz.utc)
 print(
     f"""[INFO] Script finished at {endTime.strftime('%Y-%m-%d %H:%M:%S.%f')}
