@@ -97,6 +97,10 @@ sub.run(
     stderr=sub.DEVNULL,
 )
 
+print("[INFO] Setting file modes on the CRX to 644...")
+
+sub.run(["chmod", "644", "github-material-icons-chrome-extension.crx"])
+
 print("[INFO] Writing new XML file...")
 
 with open("github-material-icons-chrome-extension.xml", "w") as f:
